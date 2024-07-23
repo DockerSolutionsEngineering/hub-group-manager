@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Access Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E01F26; /* Red */
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #000000; /* Black background for banner */
+            padding: 20px;
+            text-align: center;
+        }
+        .banner img {
+            width: 200px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #FFFFFF; /* White button */
+            color: #E01F26; /* Red text */
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #CCCCCC; /* Light grey on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="your_logo_here.png" alt="Your Logo">
+        <h1>Image Access Manager</h1>
+    </div>
+    <div class="content">
+        <form action="/add-to-group" method="POST">
+            <label for="identifier">Email or Docker ID:</label>
+            <input type="text" id="identifier" name="identifier" required>
+            <button type="submit">Add to Team</button>
+        </form>
+    </div>
+</body>
+</html>
